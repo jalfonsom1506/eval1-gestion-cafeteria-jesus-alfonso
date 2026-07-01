@@ -1,4 +1,4 @@
-public abstract class Producto implements Descontable {
+public class Producto {
 
     private String nombre;
     private double precio;
@@ -8,5 +8,41 @@ public abstract class Producto implements Descontable {
         this.nombre = nombre;
         this.precio = precio;
         this.categoria = categoria;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    public double getPrecio() {
+        return precio;
+    }
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
+    }
+
+
+    public void detalles () {
+        StringBuilder sb = new StringBuilder();
+        sb.append("------ PRODUCTO ------");
+        sb.append("\nNombre: ").append(this.nombre);
+        sb.append("\nPrecio: ").append(this.precio).append(" euros");
+        sb.append("\nCategoria: ").append(this.categoria);
+
+        System.out.println(sb.toString());
+
+        //System.out.println("------ PRODUCTO -------");
+        //System.out.println("Nombre: " + this.nombre);
+        //System.out.println("Precio: " + this.precio);
+        //System.out.println("Categoría: " + this.categoria);
     }
 }
