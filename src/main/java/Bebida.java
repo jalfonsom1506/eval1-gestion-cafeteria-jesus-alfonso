@@ -6,4 +6,18 @@ public class Bebida extends Producto {
         super(nombre, precio, categoria);
         this.tamanio = tamanio;
     }
+
+    public String getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(String tamanio) {
+        this.tamanio = tamanio;
+    }
+
+    @Override
+    public void detalles() {
+        super.detalles();
+        System.out.println("Tamaño: " + tamanio);
+    }
 }

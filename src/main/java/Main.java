@@ -2,7 +2,7 @@ public class Main {
 
     static void main(String[] args) {
 
-        Producto fanta = new Producto("Fanta", 1.80, "Refrescos");
-        fanta.detalles();
+        Comida callos = new Comida ("Callos", 9.75, "Comida", true);
+        callos.detalles();
     }
 }
