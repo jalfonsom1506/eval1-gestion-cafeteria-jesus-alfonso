@@ -1,7 +1,7 @@
 public class Cliente {
 
-    String nombre;
-    String telefono;
+    private String nombre;
+    private String telefono;
 
     public Cliente(String nombre, String telefono) {
         this.nombre = nombre;
@@ -24,8 +24,8 @@ public class Cliente {
 
     public void detallesCliente (){
         StringBuilder sb = new StringBuilder();
-        sb.append("--------------------------------");
-        sb.append("Nombre: ").append(this.nombre);
-        sb.append("\nTelefono: ").append(this.telefono);
+        sb.append("Cliente: ").append(this.nombre);
+
+        System.out.println(sb.toString());
     }
 }

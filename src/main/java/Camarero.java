@@ -1,9 +1,9 @@
 public class Camarero {
 
-    String nombre;
-    int codigoEmpleado;
+    private String nombre;
+    private String codigoEmpleado;
 
-    public Camarero(String nombre, int codigoEmpleado) {
+    public Camarero(String nombre, String codigoEmpleado) {
         this.nombre = nombre;
         this.codigoEmpleado = codigoEmpleado;
     }
@@ -11,21 +11,22 @@ public class Camarero {
     public String getNombre (){
         return this.nombre;
     }
-    public int getCodigoEmpleado (){
+    public String getCodigoEmpleado (){
         return this.codigoEmpleado;
     }
 
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public void setCodigoEmpleado(int codigoEmpleado){
+    public void setCodigoEmpleado(String codigoEmpleado){
         this.codigoEmpleado = codigoEmpleado;
     }
 
     public void detallesCamarero(){
         StringBuilder sb = new StringBuilder();
-        sb.append("---------- LE ATENDIÓ ----------");
-        sb.append("\nNombre: ").append(this.nombre);
-        sb.append("\nCódigo empleado: ").append(this.codigoEmpleado);
+        sb.append("Camarero: ").append(this.nombre);
+        sb.append(" - Código: ").append(this.codigoEmpleado);
+
+        System.out.println(sb.toString());
     }
 }
