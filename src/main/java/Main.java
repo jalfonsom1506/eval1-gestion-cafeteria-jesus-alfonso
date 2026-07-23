@@ -1,4 +1,20 @@
+/**
+ * Clase principal que actúa como motor y simulador del sistema de registro de pedidos
+ * de la cafetería.
+ * Se encarga de instanciar las entidades, añadir productos al ticket, lanzar la
+ * facturación y aplicar las promociones comerciales correspondientes.
+ *
+ * @author Jesús Alfonso Muñoz
+ * @version 1.0
+ */
+
 public class Main {
+
+    /**
+     * Punto de entrada obligatorio para la ejecución de la apliación.
+     *
+     * @param args Argumentos de la línea de comandos.
+     */
 
     static void main(String[] args) {
 

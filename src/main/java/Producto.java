@@ -1,3 +1,9 @@
+/**
+ * Representa un producto en el inventario.
+ * @author Jesús Alfonso Muñoz
+ * @version 1.0
+ */
+
 public class Producto implements Descontable {
 
     private String nombre;

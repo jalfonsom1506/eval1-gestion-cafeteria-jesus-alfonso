@@ -1,3 +1,12 @@
+/**Clase hija que hereda atributos de Producto para representar un artículo de comida.
+ * Añade el atributo o propiedad que determina si se trata de un producto frío o caliente.
+ *
+ * Contiene el constructor, los getter y setter.
+ *
+ * @author Jesús Alfonso Muñoz
+ * @version 1.0
+ */
+
 public class Comida extends Producto {
 
     private boolean esCaliente;

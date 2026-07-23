@@ -1,3 +1,13 @@
+/**
+ * Representa al cliente que realiza el pedido en la cafetería.
+ * Almacena información básica de contacto como nombre y teléfono.
+ * Se compone de los getter y setter correspondientes y el método
+ * detalles que da formato a los datos necesarios para el ticket
+ *
+ * @author Jesús Alfonso Muñoz
+ * @version 1.0
+ */
+
 public class Cliente {
 
     private String nombre;

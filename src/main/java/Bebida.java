@@ -1,3 +1,12 @@
+/**Clase hija que hereda de Producto para reflejar las consumiciones líquidas.
+ * Añade la propiedad particular del tamaño del envase, taza o recipiente.
+ *
+ * También cuenta con su constructor, getter y setter correspondientes.
+ *
+ * @author Jesús Alfonso Muñoz
+ * @version 1.0
+ */
+
 public class Bebida extends Producto {
 
     private String tamanio;
