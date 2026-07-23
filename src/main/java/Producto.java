@@ -47,7 +47,15 @@ public class Producto implements Descontable {
     }
     @Override
     public double aplicarDescuento (double porcentaje) {
-        double descuento = this.precio * (porcentaje / 100);
-        return this.precio - descuento;
+
+        if (porcentaje < 0 || porcentaje > 100) {
+            System.out.println("Porcentaje invalido");
+            return this.precio;
+        }
+
+        else {
+            double descuento = this.precio * (porcentaje / 100);
+            return this.precio - descuento;
+        }
     }
 }
