@@ -7,11 +7,11 @@ public class Comida extends Producto {
         this.esCaliente = esCaliente;
     }
 
-    public boolean getComida () {
+    public boolean getEsCaliente () {
         return this.esCaliente;
     }
 
-    public void setComida (boolean esCaliente) {
+    public void setEsCaliente (boolean esCaliente) {
         this.esCaliente = esCaliente;
     }
 
@@ -19,10 +19,10 @@ public class Comida extends Producto {
     public void detalles() {
         super.detalles();
             if (esCaliente) {
-                System.out.println("Temperatura: Caliente");
+                System.out.println("caliente");
             }
             else {
-                System.out.println("Temperatura: Fría");
+                System.out.println("frío");
             }
     }
 }
